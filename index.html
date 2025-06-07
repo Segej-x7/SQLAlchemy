@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQLAlchemy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/6cbaad2290f6acb323fc3b50ef40-yye.jpg">
+</head>
+<body>
+    <!-- Контейнер для ввода пароля -->
+    <div id="login-container">
+        <h1>Введите пароль:</h1>
+        <input type="password" id="password-input" placeholder="Пароль">
+        <button onclick="checkPassword()">Войти</button>
+        <p id="error-message" style="color: red; display: none;">Неверный пароль!</p>
+    </div>
+
+    <!-- Основной контент -->
+    <div id="content-container">
+        <div id="session-timer">00:00</div>
+        <div class="logo">
+            <img src="images/88aebae2.jpg" alt="English">
+        </div>
+        <div class="container" id="video-container" style="display: none;">
+            <h1 id="lesson-title"></h1>
+            <div class="video-wrapper">
+                <div class="video-container">
+                    <iframe
+                        id="video-iframe"
+                        title="Video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="lessons-list">
+            <h1>Выберите урок:</h1>
+            <ul id="lessons"></ul>
+            <p style="margin-top: 20px;">
+                <a href="https://massonnn.notion.site/SQLAlchemy-e2e50d4977374ed598e3b8b418258769" target="_blank">Туториал по SQLAlchemy</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Подключение скриптов -->
+    <script src="videos.js"></script>
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
